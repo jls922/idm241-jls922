@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Google Sans;
+    src: url(../../fonts/Product-Sans-Font/Product-Sans-Regular.ttf);
+  }
+
 * {
     box-sizing: border-box;
   }
@@ -12,7 +17,7 @@ a {
 
 body {
     background-color: #ebf4fc;
-    font-family: Helvetica;
+    font-family: Google Sans;
 }
 
 .flex-container {
@@ -28,14 +33,18 @@ body {
     width: 25%;
 }
 
-.gif-container {
-    background-color: #DB4437;
+.interaction {
+    display: flex;
+}
+
+.interaction-container {
+    background-color: gray; /*placeholder bg*/
     border-radius: 20px;
     color: white;
+    text-align: center;
     margin: 20px auto;
     padding: 20px;
-    text-align: center;
-    width: 50%;
+    width: 20%;
 }
 
 .title-container {
