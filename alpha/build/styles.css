@@ -1,6 +1,8 @@
 @font-face {
     font-family: Google Sans;
     src: url(../../fonts/Product-Sans-Font/Product-Sans-Regular.ttf);
+    /*https://github.com/chrstph-gg/Google-Sans-Font
+    https://partnermarketinghub.withgoogle.com/brands/google-assistant/overview/color-palette-and-typography/#:~:text=Our%20brand%20typeface%20is%20Google,all%20print%20and%20digital%20applications.*/
   }
 
 * {
