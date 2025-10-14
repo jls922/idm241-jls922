@@ -100,6 +100,7 @@ hr {
 
 .interaction-history:hover {
     background-size: 150%;
+    cursor: pointer;
 }
 
 .interaction-haiku {
@@ -113,6 +114,7 @@ hr {
 
 .interaction-haiku:hover {
     background-size: 250%;
+    cursor: pointer;
 }
 
 .interaction-sci-fi {
@@ -126,6 +128,7 @@ hr {
 
 .interaction-sci-fi:hover {
     background-size: 250%;
+    cursor: pointer;
 }
 
 .interaction-crime {
@@ -138,6 +141,7 @@ hr {
 
 .interaction-crime:hover {
     background-size: 125%;
+    cursor: pointer;
 }
 
 .rainbow-text {
