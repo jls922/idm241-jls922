@@ -75,8 +75,8 @@ hr {
 }
 
 .interaction-container {
-    background-position: center;
-    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-color: grey;
     background-size: cover;
     border-radius: 10px;
     color: white;
@@ -85,30 +85,59 @@ hr {
     height: 500px;
     justify-content: space-between;
     text-align: center;
-    transition: all 0.3s ease-in-out;
     margin: 20px auto;
     padding: 30px;
     width: 20%;
 }
 
-.interaction-container:hover {
-    background-size: 110%;
-}
-
 .interaction-history {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/history-pic.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    transition: background-size 0.3s ease-in-out;
+}
+
+.interaction-history:hover {
+    background-size: 150%;
 }
 
 .interaction-haiku {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/haiku-pic.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    transition: background-size 0.3s ease-in-out;
+}
+
+
+.interaction-haiku:hover {
+    background-size: 250%;
 }
 
 .interaction-sci-fi {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/sci-fi-pic.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    transition: background-size 0.3s ease-in-out;
+}
+
+
+.interaction-sci-fi:hover {
+    background-size: 250%;
 }
 
 .interaction-crime {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/crime-fiction-pic.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: background-size 0.3s ease-in-out;
+}
+
+.interaction-crime:hover {
+    background-size: 125%;
 }
 
 .rainbow-text {
