@@ -1,3 +1,5 @@
+/*TODO - responsiveness!!!!!!!!!!*/
+
 @font-face {
     font-family: Google Sans;
     src: url(../../fonts/Product-Sans-Font/Product-Sans-Regular.ttf);
@@ -96,12 +98,12 @@ hr {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/history-pic.png');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 120%;
+    background-size: auto;
     transition: background-size 0.3s ease-in-out;
 }
 
 .interaction-history:hover {
-    background-size: 150%;
+    background-size: auto;
     cursor: pointer;
 }
 
@@ -157,4 +159,15 @@ hr {
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+@media screen and (max-width: 915px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .interaction {
+        display: flex;
+        flex-direction: column;
+    }
 }
