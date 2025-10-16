@@ -98,12 +98,12 @@ hr {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/history-pic.png');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: auto 100%;
     transition: background-size 0.3s ease-in-out;
 }
 
 .interaction-history:hover {
-    background-size: auto;
+    background-size: auto 125%;
     cursor: pointer;
 }
 
@@ -111,13 +111,13 @@ hr {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/haiku-pic.webp');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 200%;
+    background-size: auto 200%;
     transition: background-size 0.3s ease-in-out;
 }
 
 
 .interaction-haiku:hover {
-    background-size: 250%;
+    background-size: auto 225%;
     cursor: pointer;
 }
 
@@ -125,13 +125,13 @@ hr {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/sci-fi-pic.png');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 200%;
+    background-size: auto 150%;
     transition: background-size 0.3s ease-in-out;
 }
 
 
 .interaction-sci-fi:hover {
-    background-size: 250%;
+    background-size: auto 175%;
     cursor: pointer;
 }
 
@@ -139,12 +139,12 @@ hr {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/crime-fiction-pic.png');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto 100%;
     transition: background-size 0.3s ease-in-out;
 }
 
 .interaction-crime:hover {
-    background-size: 125%;
+    background-size: auto 125%;
     cursor: pointer;
 }
 
