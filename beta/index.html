@@ -10,18 +10,24 @@
 <body>
     <div class="title-container">
         <h1>IDM241 Microinteraction - Beta Description</h1>
-        <a href="https://artsandculture.google.com/">insert link</a>
+        <a href="https://www.youtube.com/">https://www.youtube.com/</a>
     </div>
-    
     <div class="flex-container">
-        <!--TRIGGERS - Describe in detail what event(s) will start existing microinteraction.-->
+        <!--TRIGGERS - Describe in detail 2-3 objects and what event(s) will start microinteractions.-->
         <div class="body-container">
             <div>
                 <h2>Triggers</h2> 
             </div>
             
             <div>
-                <p>Exhibit Card:</p>
+                <p>Create Button:</p>
+                    <ul>
+                        <li>Hover on</li>
+                        <li>Hover off</li>
+                        <li>Click without dropdown</li>
+                        <li>Click with dropdown</li>
+                    </ul>
+                <p>Create Button Dropdown Options:</p>
                     <ul>
                         <li>Hover on</li>
                         <li>Hover off</li>
@@ -29,20 +35,51 @@
             </div>
         </div>
 
-        <!--RULES - Describe in detail all of the rules in existing microinteraction (1-2).-->
-        <!--FEEDBACK - Describe in detail what the user will SEE, HEAR or FEEL.-->
+        <!--RULES - Describe in detail all of the rules in your microinteractions (2-3).-->
         <div class="body-container">
             <div>
-                <h2>Rules and Feedback</h2>
+                <h2>Rules</h2>
             </div>
             
             <div>
-                <p>Exhibit Card:</p>
+                <p>Create Button:</p>
+                    <ul>
+                        <li>Hover on</li>
+                        <ul>
+                            <li>Button color gets darker. Ease out transition in 150ms</li>
+                            <li>Cursor changes to finger</li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li>Hover off</li>
+                        <ul>
+                            <li>Button color gets darker. Ease out transition for 150ms</li>
+                            <li>Cursor changes back to default pointer</li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li>Click without dropdown</li>
+                        <ul>
+                            <li>Button color gets more dark</li>
+                            <li>Dropdown menu opens. Quick Smart Animate transition for 600ms</li>
+                            <li>Button's plus icon spins once</li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li>Click with dropdown</li>
+                        <ul>
+                            <li>Button color returns back to a lighter red color</li>
+                            <li>Dropdown menu closes. Quick Smart Animate transition for 600ms</li>
+                            <li>Button's plus icon spins once</li>
+                        </ul>
+                    </ul>
+            </div>
+            <div>
+                <p>Create Button Dropdown Options:</p>
                     <ul>
                         <li>Hover on</li>
                         <ul>
                             <li>Image slightly scales up</li>
-                            <li>Images brightness decreases</li>
                             <li>Cursor changes to finger</li>
                         </ul>
                     </ul>
@@ -50,16 +87,72 @@
                         <li>Hover off</li>
                         <ul>
                             <li>Image slightly scales down</li>
-                            <li>Images brightness increases</li>
+                            <li>Cursor changes back to pointer</li>
+                        </ul>
+                    </ul>
+            </div>
+        </div>
+        
+        <!--FEEDBACK - Describe in detail what the user will SEE, HEAR or FEEL.-->
+        <div class="body-container">
+            <div>
+                <h2>Feedback</h2>
+            </div>
+            
+            <div>
+                <p>Create Button:</p>
+                    <ul>
+                        <li>Hover on</li>
+                        <ul>
+                            <li>Button color gets darker. Ease out transition in 150ms</li>
+                            <li>Cursor changes to finger</li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li>Hover off</li>
+                        <ul>
+                            <li>Button color gets darker. Ease out transition for 150ms</li>
+                            <li>Cursor changes back to default pointer</li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li>Click without dropdown</li>
+                        <ul>
+                            <li>Button color gets more dark</li>
+                            <li>Dropdown menu opens. Quick Smart Animate transition for 600ms</li>
+                            <li>Button's plus icon spins once</li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li>Click with dropdown</li>
+                        <ul>
+                            <li>Button color returns back to a lighter red color</li>
+                            <li>Dropdown menu closes. Quick Smart Animate transition for 600ms</li>
+                            <li>Button's plus icon spins once</li>
+                        </ul>
+                    </ul>
+            </div>
+            <div>
+                <p>Create Button Dropdown Options:</p>
+                    <ul>
+                        <li>Hover on</li>
+                        <ul>
+                            <li>Image slightly scales up</li>
+                            <li>Cursor changes to finger</li>
+                        </ul>
+                    </ul>
+                    <ul>
+                        <li>Hover off</li>
+                        <ul>
+                            <li>Image slightly scales down</li>
                             <li>Cursor changes back to pointer</li>
                         </ul>
                     </ul>
             </div>
         </div>
 
-        <!--LOOPS & MODES - Describe in detail meta-rules of existing microinteraction 
-        (repeating objects, additional modules, changes to the microinteraction if 
-        conditions change, etc).-->
+        <!--LOOPS & MODES - Describe in detail meta-rules of your microinteraction 
+        (repeating objects, additional modules, changes to the microinteraction if conditions change, etc).-->
         <div class="body-container">
             <div>
                 <h2>Loops and Modes</h2>
@@ -71,11 +164,11 @@
 
     </div>
 
-    <!--Static images and/or animated gifs that help visualize how the existing 
-    "simple" microinteraction works. DO NOT use place holder images!-->
+    <!--Static images and/or animated gifs that help visualize how your "medium" 
+    microinteraction will work. DO NOT use place holder images!-->
     <div class="gif-container">
         <h2>Animated Gif</h2>
-        <img src="alpha.gif" alt="gif demostration of the microinteraction" width="100%">
+        <img src="beta-design-gif.gif" alt="gif demostration of the microinteraction" width="100%">
     </div>
 </body>
 </html>

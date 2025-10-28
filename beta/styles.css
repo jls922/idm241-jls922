@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Merriweather;
+    src: url(../fonts/Merriweather/Merriweather-VariableFont_opsz\,wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: Source Sans;
+    src: url(../fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+}
+
 * {
     box-sizing: border-box;
   }
@@ -6,21 +16,36 @@
 	--rhythm: 1.5rem;
 }
 
+a {
+    color: aliceblue;
+}
+
+body {
+    font-family: Source Sans;
+}
+
+h1, h2, h3 {
+    font-family: Merriweather;
+}
+
 .flex-container {
     display: flex;
 }
 
 .body-container {
-    background-color: grey;
+    background-color: white;
+    border-color: #a61632;
     border-radius: 20px;
-    color: white;
+    border-style: inset;
+    border-width: 8px;
+    color: black;
     margin: 20px auto;
     padding: 20px;
-    width: 20%;
+    width: 21.5%;
 }
 
 .gif-container {
-    background-color: grey;
+    background-color: #a61632;
     border-radius: 20px;
     color: white;
     margin: 20px auto;
@@ -30,8 +55,29 @@
 }
 
 .title-container {
-    background-color: #4285F4;
+    background-color: #a61632;
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+@media screen and (max-width: 1025px) {
+    .body-container {
+        width: 50%;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .interaction {
+        display: flex;
+        flex-direction: column;
+    }
+    .interaction-container {
+        width: 50%;
+        background-size: 125% auto;
+    }
+    .interaction-container:hover {
+        background-size: 150% auto;
+    }
 }
