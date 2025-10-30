@@ -54,6 +54,10 @@ h1, h2, h3 {
     width: 50%;
 }
 
+.object-name {
+    font-weight: bold;
+}
+
 .title-container {
     background-color: #a61632;
     color: white;
