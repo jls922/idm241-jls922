@@ -1,0 +1,251 @@
+@font-face { /*description*/
+    font-family: Merriweather;
+    src: url(../../fonts/Merriweather/Merriweather-VariableFont_opsz\,wdth\,wght.ttf);
+}
+
+@font-face { /*description*/
+    font-family: Microsoft-Sans-Serif;
+    src: url(../../fonts/microsoft-sans-serif/micross.ttf);
+}
+
+@font-face { /*for interaction*/
+    font-family: Source Sans;
+    src: url(../../fonts/Source_Sans_3/SourceSans3-VariableFont_wght.ttf);
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+:root{
+	--rhythm: 1.5rem;
+    --button-bg: #F5C2C2;
+    --button-hover: #F58D8D;
+    --button-click: #DE6565; /*should keep?*/
+    --dropdown-bg: #E9C2C2;
+}
+
+a {
+    color: aliceblue;
+}
+
+
+
+.flex-container p, a, li {
+    font-family: Source Sans;
+}
+
+.flex-container h1, h2, h3 {
+    font-family: Merriweather;
+}
+
+.title-container h1, h2, h3 {
+    font-family: Merriweather;
+}
+
+.title-container p, a, li {
+    font-family: Source Sans;
+}
+
+nav {
+    margin: 40px auto;
+    display: block;
+    position: relative;
+    /*width: clamp(320px, 50vw ,100%);*/
+    width: 185px;
+}
+
+nav h2 {
+    font-size: 24px;
+    border-radius: 50px;
+    position: relative;
+    background: var(--button-bg);
+    height: 60px;
+    margin-bottom: 0;
+    color: black;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    /*box-shadow: 4px 4px 20px -2px rgba(0, 0, 0, 0.35);*/
+    transition: all 0.15s;
+}
+
+nav:hover h2 {
+    transform: translateY(-2px);
+    background-color: var(--button-hover);
+    box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.35);
+    transition: all 0.15s;
+}
+
+#toggle {
+    position: absolute;
+    font-family: Microsoft-Sans-Serif;
+    background-color: var(--button-click);
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+    height: 80px;
+}
+
+nav h2::before{
+    position: absolute;
+    left: 0.75rem;
+    top: 0;
+    height: inherit;
+    aspect-ratio: 1;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding-left: 1rem;
+    content: "+";
+    line-height: 1; 
+    font-size: 40px;
+    /*clip-path: polygon(50% 25%, 20% 80%, 80% 80%);*/
+    transform: translateX(-45%) rotate(180deg);
+    transform-origin: center center;
+    transition: all .5s ease-in-out;
+}
+
+#toggle:not(:checked) ~ h2::before {
+    left: 0.75rem;
+    transform: translateX(-20%) translateY(-2%) rotate(0deg);
+}
+
+#toggle:focus ~ h2{
+    transition: all .6s ease-in-out;
+}
+
+#toggle:checked ~ ul {
+    background-color: var(--button-hover);
+    visibility: hidden;
+    opacity: 0;
+}
+
+#toggle:not(:checked) ~ ul {
+    background-color: var(--dropdown-bg);
+    opacity: 1;
+    transition: opacity 0.6s ease-in-out;
+}
+
+nav ul {
+    padding-left: 0;
+    padding-top: 1rem;
+    margin-top: 0;
+    background: var(--dropdown-bg);
+    border-radius: 25px;
+    list-style: none;
+    overflow: hidden;
+    text-align: right;
+    text-align: center;
+    transition: all 0.15s ease-out;
+    width: 100%;
+    position: absolute;
+}
+nav ul li {
+    border-radius: 2px;
+    border-color: var(--button-click);
+    border-style: solid;
+    border-width: 0.5px 0;
+    position: relative;
+    display: inline-block;
+    line-height: 1.5;
+    width: 100%;
+    margin: 0; /*0.25rem 0*/
+    padding: 1rem;
+    background: var(--button-bg);
+    font-size: 24px;
+    text-align: left;
+    transition: background .15s ease-in;
+    /*box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.35);*/
+}
+
+nav ul li:hover { /*, nav ul li a:focus*/
+    background: var(--button-hover);
+    transition: background 0.15s;
+}
+
+nav ul a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.container {
+    font-family: Microsoft-Sans-Serif;
+    margin: auto;
+    color: black;
+    display: flex; /* Makes the nav a flex container */
+    justify-content: center; /* Centers flex items horizontally */
+    align-items: center;
+}
+
+.container > h2 {
+    font-family: Microsoft-Sans-Serif;
+}
+.container a {
+    font-family: Microsoft-Sans-Serif;
+}
+
+.body-container {
+    background-color: white;
+    border-color: #a61632;
+    border-radius: 20px;
+    border-style: inset;
+    border-width: 8px;
+    color: black;
+    margin: 20px auto;
+    padding: 20px;
+    width: 21.5%;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.gif-container {
+    background-color: #a61632;
+    border-radius: 20px;
+    color: white;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    width: 50%;
+}
+
+.object-name {
+    font-weight: bold;
+}
+
+.title-container {
+    background-color: #a61632;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1025px) {
+    .body-container {
+        width: 50%;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .interaction {
+        display: flex;
+        flex-direction: column;
+    }
+    .interaction-container {
+        width: 50%;
+        background-size: 125% auto;
+    }
+    .interaction-container:hover {
+        background-size: 150% auto;
+    }
+}
