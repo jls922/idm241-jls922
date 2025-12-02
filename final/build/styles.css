@@ -169,6 +169,10 @@ nav ul li:hover { /*, nav ul li a:focus*/
     transition: background 0.15s;
 }
 
+nav ul li:active { 
+    background: var(--button-click);
+}
+
 nav ul a {
     display: block;
     color: inherit;
