@@ -3,10 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Case Study</title>
 </head>
 <body>
-    <h1>hello world</h1>
-    <p>uhhhh you didnt see anything. this is totally a case study</p>
+    <div class="title-container">
+        <h1>IDM241 Microinteraction - Case Study</h1>
+    </div>
+
+    <div class="content">
+        <h1 class="page-title">YouTube Create Button</h1>
+        <img class="img-hero" src="hero_casestudy.png" alt="hero image of the project">
+        
+        <h2 class="page-title">Overview</h2>
+        <p>For my Microinteraction project, I created and improved an interaction from an existing 
+            website or app. The website I chose was YouTube and I focused on the Create button 
+            which could be found on the header on the top right corner right by the profile button.
+            The goal was to design and program a microinteraction and make improvements within it.
+            The final product was a functioning create button with a dropdown showing four 
+            different options. This was developed in VSCode using HTML and CSS, 
+            managed through GitHub, and hosted on Netlify.</p>
+    
+        <h2 class="page-title">Context and Challenge</h2>
+        <h3>Background: </h3>
+        <p>My final project for this class focuses on building an improved create button from YouTube's website. 
+            The project is an individual assignment and is one of the coding classes in the UXID program.  
+            Over the course of 10 weeks, only three assignments helped 
+            in the production of my final project: Alpha, Beta, and Final Project</p>
+        <p>Developed on a zero-cost budget, the project aimed to give students practical experience with creating 
+            microinteractions and build an understanding of what makes an interaction an interaction. 
+            It met the goals by allowing click inputs, and hover states. Throughout the project, I built a strong 
+            understanding of microinteraction and learned to apply this effectively.</p>
+        <h3>Problem: </h3>
+            <p>Originally I chose an interaction from Google Arts' website which I didn't 
+                notice it changing the way it is or works, or even disappearing randomly on different 
+                days. Despite this, I continued to submit my Alpha Build which was a recreation of 
+                the interaction to have a base for the final project. Because of the issues mentioned, 
+                I couldn't continue with Google Arts'. That led to me choosing YouTube as it is something 
+                I use often and I notice how much the create button lacks. Fortunately, this button 
+                had no issues so I continued on with using this interaction for my final project.
+            </p>
+        <h3>Goals & Objectives: </h3>
+            <p>The project required converting all recipe PDFs into structured digital data and storing them in 
+            a MySQL database capable of organizing categories, listing ingredients, and displaying recipe details. From there,
+             I needed to build a user-friendly front end that improved readability and accessibility while enabling fast
+              browsing and searching—features the original PDFs couldn’t offer. To support this functionality, I 
+              also created an API that delivered all recipe information in JSON format and hosted the final website 
+              publicly on Drexel’s servers.</p>
+        <h2 class="page-title">Process and Insight</h2>
+        <h3>Target Audience</h3>
+            <p>This project is designed for anyone who enjoys browsing online recipes, 
+                whether they’re new to cooking or seasoned in the kitchen. I aimed to 
+                create an simple, easy-to-use platform with straightforward features 
+                like a search bar and protein filters for smoother 
+                browsing.</p>
+            
+        <h3>Development</h3>
+        <!--<img class="img-hero" src="images/code_casestudy.jpg" alt="Picture of Sheets Document and phpMyAdmin">-->
+            <p>Before coding in PHP, I started with a template using HTML and CSS on VS Code to create my layout
+                and making it responsive. After that I converted the HTML files into PHP files. 
+                PHP was useful in repeated elements, like recipe cards and the contents within the recipe pages
+                making it much easier and quicker to create recipe pages and cards for as many recipes I can add to the database.</p>
+            <h3>Final Project</h3>
+                <p>
+                    To deploy my website, Netlify was used to connect to my GitHub repository and host. 
+                </p>
+            
+            <h2 class="page-title">The Solution</h2>
+            <!--<h4>
+                <a href="https://vimeo.com/1145558694?share=copy&fl=sv&fe=ci" target="_blank">Screen Capture Video Link</a>
+            </h4>-->
+            <h4 class="case-study-link">
+                <a class="case-study-link" href="../final/build/index.html" target="_blank">Live Project Link (Final Build)</a>
+            </h4>
+            <!--VIDEO BELOW-->
+            <video autoplay muted> <!--without controls? seems to not autoplay with controls-->
+                <source src="case_study_solution.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>The website lays out all the recipes from the database in a organized way. The filter and search bar are at the top
+                and displayed so that users can easily select a filter or reset the filter to catorgize the recipes or search for a certain recipe.
+                The website is responsive so that it is accessible and responsive on all devices.
+            </p>
+
+            <h2 class="page-title">The Results</h2>
+            <p>This 10-week project significantly expanded my understanding of full-stack development. I learned how to design 
+                and integrate a database from scratch, structure content for accessibility, and deploy a live site—skills 
+                I had no prior experience with. Working through data cleanup, PHP integration, and server hosting gave me 
+                a clearer sense of how dynamic web applications function behind the scenes.</p>
+            <p>The project also strengthened my time-management and project-planning abilities. Looking back, 
+                documenting feedback and following a more structured cycle of research, testing, and design would have 
+                made the process more efficient. Still, the experience proved how even simple content can benefit from 
+                intentional structure and thoughtful design, and it sparked a deeper curiosity about how data moves through 
+                a system—insight I’ll carry into future projects.</p>
+    </div>
 </body>
 </html>
